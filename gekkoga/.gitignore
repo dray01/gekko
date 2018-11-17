@@ -1,0 +1,4 @@
+node_modules
+package-lock.json
+results/config
+!config/sample-config.js
