@@ -37,7 +37,7 @@ dwsync.xml
 
 # Folders & files to ignore
 
-_postgres
+_postgresql
 node_modules
 candles.csv
 cexio.db
