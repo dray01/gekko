@@ -1,7 +1,7 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'neuralnet_v2',
+  stratName: 'n8_v2_BB_RSI_SL',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
@@ -68,15 +68,25 @@ const config = {
     historySize: randomExt.integer(100, 20),
 // lets see how this goes
 // eg randomExt.integer(400, 30)/100, will give 1 to 0.5 in 0.01
-    threshold_buy: randomExt.integer(600, 30)/100,
-    threshold_sell: randomExt.integer(600, 30)/-100,
-    learning_rate: randomExt.integer(100, 30)/100,
-    momentum: randomExt.integer(100, 30)/100,
-    decay: randomExt.integer(100, 30)/100,
-    hodl_threshold: randomExt.integer(16, 2),
-    price_buffer_len: randomExt.integer(300, 50),
-    min_predictions: randomExt.integer(3000, 500) * 10,
 
+    interval: randomExt.integer(24, 2) * 1,
+    SL: randomExt.integer(24, 1) * 1,
+    BULL_RSI: randomExt.integer(24, 1) * 1,
+    BULL_RSI_high: randomExt.integer(180, 60) *1,
+    BULL_RSI_low: randomExt.integer(100, 10) *1,
+    BEAR_RSI: randomExt.integer(30, 10) *1,
+    BEAR_RSI_high: randomExt.integer(60, 20) *1,
+    BEAR_RSI_low: randomExt.integer(30, 10) *1,
+    ADX: randomExt.integer(24, 1) * 1,
+    ADX_high: randomExt.integer(100, 5) *1,
+    ADX_low: randomExt.integer(100, 10) *1,
+
+    thresholds: {
+      low: randomExt.integer(40, 10) *1,
+      high: randomExt.integer(200, 40) *1,
+      down: randomExt.integer(20, 1)/10,
+      persistence: randomExt.integer(5, 1) * 1,
+    },
 
     candleSize: randomExt.pick(config.candleValues)
   })

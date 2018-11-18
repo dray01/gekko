@@ -75,8 +75,8 @@ const config = {
     momentum: randomExt.integer(100, 30)/100,
     decay: randomExt.integer(100, 30)/100,
     hodl_threshold: randomExt.integer(16, 2),
-    price_buffer_len:  randomExt.integer(300, 50),
-    min_predictions:  randomExt.integer(3000, 500) * 10,
+    price_buffer_len: randomExt.integer(300, 50),
+    min_predictions: randomExt.integer(3000, 500) * 10,
 
 
     candleSize: randomExt.pick(config.candleValues)

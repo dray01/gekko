@@ -77,8 +77,8 @@ const config = {
     maFast: randomExt.integer(66, 20) *1,
     maSlow: randomExt.integer(800, 300) *1,
     decay: randomExt.integer(200, 20)/100,
-    price_buffer_len:  randomExt.integer(300, 50) *1,
-    stoploss_threshold:  randomExt.integer(22, 2) *1,
+    price_buffer_len: randomExt.integer(300, 50) *1,
+    stoploss_threshold: randomExt.integer(22, 2) *1,
 
 
     candleSize: randomExt.pick(config.candleValues)
