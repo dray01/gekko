@@ -9,13 +9,13 @@ const config = {
       asset: 'ADA'
     },
 
-//    daterange: 'scan',
-//
+    daterange: 'scan',
 
-    daterange: {
-      from: '2018-10-01 00:00',
-      to: '2018-11-15 00:00'
-    },
+
+//    daterange: {
+//      from: '2018-10-01 00:00',
+//      to: '2018-11-15 00:00'
+//    },
 
     simulationBalance: {
       'asset': 1,
@@ -73,11 +73,11 @@ const config = {
     threshold_sell_bear: randomExt.integer(200, 10)/-100,
     threshold_sell_bull: randomExt.integer(200, 10)/-100,
     NN_SMMA_Length: randomExt.integer(16, 2) * 1,
-    maFast: randomExt.integer(66, 20),
-    maSlow: randomExt.integer(800, 300),
+    maFast: randomExt.integer(66, 20) *1,
+    maSlow: randomExt.integer(800, 300) *1,
     decay: randomExt.integer(200, 20)/100,
-    price_buffer_len:  randomExt.integer(300, 50),
-    stoploss_threshold:  randomExt.integer(22, 2),
+    price_buffer_len:  randomExt.integer(300, 50) *1,
+    stoploss_threshold:  randomExt.integer(22, 2) *1,
 
     candleSize: randomExt.pick(config.candleValues)
   })

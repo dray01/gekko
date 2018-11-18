@@ -9,12 +9,13 @@ const config = {
       asset: 'LTC'
     },
 
- //   daterange: 'scan',
+    daterange: 'scan',
 
-    daterange: {
-      from: '2018-10-01 00:00',
-      to: '2018-11-15 00:00'
-    },
+
+//    daterange: {
+//      from: '2018-10-01 00:00',
+//      to: '2018-11-15 00:00'
+//    },
 
     simulationBalance: {
       'asset': 1,
