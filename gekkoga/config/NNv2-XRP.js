@@ -1,4 +1,4 @@
-nconst randomExt = require('random-ext');
+const randomExt = require('random-ext');
 
 const config = {
   stratName: 'NNv2',
