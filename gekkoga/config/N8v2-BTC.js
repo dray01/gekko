@@ -1,7 +1,7 @@
 const randomExt = require('random-ext');
 
 const config = {
-  stratName: 'n8v2',
+  stratName: 'n8_v2',
   gekkoConfig: {
     watch: {
       exchange: 'binance',
