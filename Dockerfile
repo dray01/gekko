@@ -31,6 +31,7 @@ RUN npm install --production convnetjs && \
     npm install --produciont lodash && \
     npm install --production gauss && \
     npm install --production fs-extra && \
+    npm install --production fs && \
     npm cache clean --force
 
 # Install Gekko Broker dependencies
