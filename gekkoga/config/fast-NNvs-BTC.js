@@ -76,10 +76,11 @@ const config = {
     threshold_sell_bull: randomExt.integer(200, 10)/-100,
     NN_SMMA_Length: randomExt.integer(16, 2) * 1,
     maFast: randomExt.integer(66, 20) *1,
-    maSlow: randomExt.integer(800, 300) *1,
+    maSlow: randomExt.integer(750, 250) *1,
     decay: randomExt.integer(200, 20)/100,
     price_buffer_len: randomExt.integer(300, 50) *1,
     stoploss_threshold: randomExt.integer(22, 2) *1,
+    waitTime: randomExt.integer(800, 660) *1,
 
 
     candleSize: randomExt.pick(config.candleValues)
