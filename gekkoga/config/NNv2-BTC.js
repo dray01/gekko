@@ -11,6 +11,7 @@ const config = {
 
     daterange: 'scan',
 
+    
 
 //    daterange: {
 //      from: '2018-10-01 00:00',
