@@ -55,7 +55,7 @@ const config = {
   // optionally recieve and archive new all time high every new all time high
   notifications: {
     email: {
-      enabled: fasle,
+      enabled: false,
       receiver: 'brett.drayton@gmail.com',
       senderservice: 'gmail',
       sender: '@gmail.com',
