@@ -1,4 +1,5 @@
 const randomExt = require('random-ext');
+//
 
 const config = {
   stratName: 'BBRSI',
